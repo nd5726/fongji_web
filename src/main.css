@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+p,
+span,
+div {
+  font-family: "Noto Serif TC", serif;
+}
+
+.entrance {
+  background-size: cover auto;
+  background-image: url("./images/test.png");
+  background-position: 0px 0px;
+  background-repeat: repeat;
+
+  animation: animatedBackground 10s linear infinite;
+}
+
+@media (max-width: 640px) {
+  .logo {
+    zoom: 0.8;
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 130%;
+  }
+}
+
+.type-text {
+  width: 11em;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(11);
+}
+
+.section08,
+.section09,
+.contact {
+  background-size: cover;
+  background-image: url("./images/main_bg02.png");
+}
+@media (max-width: 1024px) {
+  .section09 {
+    background: none;
+  }
+  .section09-text {
+    background-size: cover;
+    background-image: url("./images/main_bg02.png");
+  }
+}
+
+.section02,
+.section04,
+.section07,
+.team,
+.info {
+  background-size: cover;
+  background-image: url("./images/sec02_bg.png");
+}
+
+.section03 {
+  background-size: cover;
+  background-position: center bottom;
+  background-image: url("./images/sec03-all.png");
+}
+@media (max-width: 1024px) {
+  .section03 {
+    background: #030a1c;
+  }
+}
+
+.sec05-left {
+  background-image: url("/dist/images/sec05-left.png");
+  background-position: left top;
+  background-size: cover;
+}
+@media (max-width: 1024px) {
+  .sec05-left {
+    background: #fff;
+  }
+}
+.section06 {
+  background-size: cover;
+  background-position: center top;
+  background-image: url("./images/sec06.png");
+}
+@media (max-width: 1024px) {
+  .section06 {
+    background: #0e519c;
+  }
+}
+
+.btn01 {
+  background-color: #b58b72;
+  background-image: url("/dist/images/button_bg01.png");
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.btn02 {
+  background-color: #f7a773;
+  background-image: url("/dist/images/button_bg02.png");
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+#web_loading_index {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 10000;
+  background: #fff;
+  outline: 1px #0f0 solid;
+  left: 0;
+  top: 0;
+}
+
+@-webkit-keyframes rotateContainer {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotateContainer {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes rotateContainer {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loadingCircle {
+  0% {
+    stroke-dashoffset: 840;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-moz-keyframes loadingCircle {
+  0% {
+    stroke-dashoffset: 840;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-ms-keyframes loadingCircle {
+  0% {
+    stroke-dashoffset: 840;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#container_loader {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+}
+
+.loading {
+  -webkit-animation-name: rotateContainer;
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  -moz-animation-name: rotateContainer;
+  -moz-animation-duration: 1.2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+
+  -ms-animation-name: rotateContainer;
+  -ms-animation-duration: 1.2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+}
+
+.loaded {
+}
+
+.loader {
+  width: 90px;
+  height: 90px;
+  transform: rotate(-90deg);
+  stroke-linecap: round;
+  fill: none;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.circle {
+  transform-origin: center;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 800;
+  transform-origin: center;
+
+  -webkit-animation-name: loadingCircle;
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-iteration-count: 0;
+  -webkit-animation-timing-function: linear;
+}
+
+.loading .circle {
+  stroke-dasharray: 408;
+  -webkit-animation-iteration-count: infinite;
+}
