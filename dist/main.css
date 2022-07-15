@@ -914,8 +914,8 @@ video {
   padding-bottom: 66.6%;
 }
 
-.pb-\[55\%\]{
-  padding-bottom: 55%;
+.pb-\[56\.2\%\]{
+  padding-bottom: 56.2%;
 }
 
 .pt-24{
@@ -1000,26 +1000,6 @@ video {
 
 .pb-2{
   padding-bottom: 0.5rem;
-}
-
-.pb-\[53\%\]{
-  padding-bottom: 53%;
-}
-
-.pb-\[57\%\]{
-  padding-bottom: 57%;
-}
-
-.pb-\[56\.5\%\]{
-  padding-bottom: 56.5%;
-}
-
-.pb-\[56\.4\%\]{
-  padding-bottom: 56.4%;
-}
-
-.pb-\[56\.2\%\]{
-  padding-bottom: 56.2%;
 }
 
 .text-left{
@@ -1131,21 +1111,24 @@ video {
   color: rgb(61 58 57 / var(--tw-text-opacity));
 }
 
-body,p,span,div{
-  font-family: 'Noto Serif TC', serif;
+body,
+p,
+span,
+div {
+  font-family: "Noto Serif TC", serif;
 }
 
-.entrance{
-  background-size:cover auto;
-  background-image: url('./images/test.png');
+.entrance {
+  background-size: cover auto;
+  background-image: url("./images/test.png");
   background-position: 0px 0px;
   background-repeat: repeat;
   -webkit-animation: animatedBackground 10s linear infinite;
           animation: animatedBackground 10s linear infinite;
 }
 
-@media(max-width:640px){
-  .logo{
+@media (max-width: 640px) {
+  .logo {
     zoom: 0.8;
   }
 }
@@ -1156,7 +1139,7 @@ body,p,span,div{
   }
 
   to {
-    background-position:  0 130%;
+    background-position: 0 130%;
   }
 }
 
@@ -1166,7 +1149,7 @@ body,p,span,div{
   }
 
   to {
-    background-position:  0 130%;
+    background-position: 0 130%;
   }
 }
 
@@ -1175,77 +1158,83 @@ body,p,span,div{
   overflow: hidden;
   white-space: nowrap;
   -webkit-animation: typing 3s steps(11);
-          animation: typing 3s steps(11)
+          animation: typing 3s steps(11);
 }
 
-.section08,.section09,.contact{
+.section08,
+.section09,
+.contact {
   background-size: cover;
-  background-image: url('./images/main_bg02.png');
+  background-image: url("./images/main_bg02.png");
 }
 
-@media(max-width:1024px){
-  .section09{
+@media (max-width: 1024px) {
+  .section09 {
     background: none;
   }
 
-  .section09-text{
+  .section09-text {
     background-size: cover;
-    background-image: url('./images/main_bg02.png');
+    background-image: url("./images/main_bg02.png");
   }
 }
 
-.section02,.section04,.section07,.team,.info{
+.section02,
+.section04,
+.section07,
+.team,
+.info {
   background-size: cover;
-  background-image: url('./images/sec02_bg.png');
+  background-image: url("./images/sec02_bg.png");
 }
 
-.section03{
+.section03 {
   background-size: cover;
   background-position: center bottom;
-  background-image: url('./images/sec03-all.png');
+  background-image: url("./images/sec03-all.png");
 }
 
-@media(max-width:1024px){
-  .section03{
+@media (max-width: 1024px) {
+  .section03 {
     background: #030a1c;
   }
 }
 
-.sec05-left{
-  background-image: url('/dist/images/sec05-left.png');
+.sec05-left {
+  background-image: url("/dist/images/sec05-left.png");
   background-position: left top;
   background-size: cover;
 }
 
-@media(max-width:1024px){
-  .sec05-left{
+@media (max-width: 1024px) {
+  .sec05-left {
     background: #fff;
   }
 }
 
-.section06{
+.section06 {
   background-size: cover;
   background-position: center top;
-  background-image: url('./images/sec06.png');
+  background-image: url("./images/sec06.png");
 }
 
-@media(max-width:1024px){
-  .section06{
+@media (max-width: 1024px) {
+  .section06 {
     background: #0e519c;
   }
 }
 
-.btn01{
+.btn01 {
   background-color: #b58b72;
-  background-image: url('/dist/images/button_bg01.png');
+  background-image: url("/dist/images/button_bg01.png");
   background-size: contain;
   background-position: left center;
   background-repeat: no-repeat;
 }
 
-.btn02{
+.btn02 {
   background-color: #f7a773;
-  background-image: url('/dist/images/button_bg02.png');
+  background-image: url("/dist/images/button_bg02.png");
   background-size: contain;
   background-position: left center;
   background-repeat: no-repeat;
@@ -1274,7 +1263,7 @@ body,p,span,div{
 
 @-webkit-keyframes loadingCircle {
   0% {
-    stroke-dashoffset: 840
+    stroke-dashoffset: 840;
   }
 
   100% {
